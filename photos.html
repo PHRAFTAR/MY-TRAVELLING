@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Travel Photos - My Travel Adventures</title>
+    <title>My Travel Adventures - Photos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>My Travel Photos</h1>
+        <h1>My Travel Adventures</h1>
     </header>
     <nav>
         <a href="index.html">Home</a>
@@ -18,23 +18,30 @@
         <a href="contact.html">Contact</a>
     </nav>
     <section id="photos">
-        <h2>Travelling Destinations</h2>
+        <h2>Photos</h2>
         <div class="folders">
-            <div class="folder">
-                <div class="folder-top"></div>
-                <div class="folder-bottom"></div>
-                <a href="travelling/destination1.html">Destination 1</a>
-            </div>
-            <div class="folder">
-                <div class="folder-top"></div>
-                <div class="folder-bottom"></div>
-                <a href="travelling/destination2.html">Destination 2</a>
-            </div>
-            <div class="folder">
-                <div class="folder-top"></div>
-                <div class="folder-bottom"></div>
-                <a href="travelling/destination2.html">Destination 3</a>
-            <!-- Add more folders as needed -->
+            <a href="destination1.html">
+                <div class="folder" style="background-image: url('destination1.jpg');">
+                    <div class="folder-overlay">
+                        <span class="folder-name">Destination 1</span>
+                    </div>
+                </div>
+            </a>
+            <a href="destination2.html">
+                <div class="folder" style="background-image: url('destination2.jpg');">
+                    <div class="folder-overlay">
+                        <span class="folder-name">Destination 2</span>
+                    </div>
+                </div>
+            </a>
+            <a href="destination3.html">
+                <div class="folder" style="background-image: url('destination3.jpg');">
+                    <div class="folder-overlay">
+                        <span class="folder-name">Destination 3</span>
+                    </div>
+                </div>
+            </a>
+            <!-- Add more folders with links as needed -->
         </div>
     </section>
     <footer>
