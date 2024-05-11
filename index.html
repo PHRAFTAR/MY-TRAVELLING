@@ -5,6 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to My Travel Adventures</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for the image container */
+        .image-container {
+            display: flex; /* Use flexbox for alignment */
+            justify-content: flex-start; /* Align items to the start of the flex container */
+            align-items: center; /* Center items vertically */
+        }
+
+        /* Additional styles for the image */
+        #home img {
+            width: 50%; /* Set the width to 50% of its container */
+            height: auto; /* Maintain aspect ratio */
+            max-width: 400px; /* Maximum width of the image */
+            margin-right: 10px; /* Reduced margin to the right */
+            display: block; /* Ensure the image is a block element */
+            border: 2px solid #ddd; /* Add a border around the image */
+            border-radius: 8px; /* Optional: Add rounded corners to the border */
+            padding: 5px; /* Optional: Add padding inside the border */
+        }
+
+        /* Additional styles for the text */
+        .author-info {
+            margin-left: 10px; /* Reduced margin to the left */
+            text-align: justify; /* Justify the text */
+            max-width: 50%; /* Limit the width of the text */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,27 +49,24 @@
         <p>
             Hello, I'm Priyanshu Sharma Welcome to My Travel Adventures, where I share my journey exploring the world and capturing its beauty through photography and videography.
         </p>
-        <h2>Travel Photo & Video Albums</h2>
-        <div class="folders">
-            <div class="folder" style="background-image: url('photo1.jpg');">
-                <div class="photos">
-                    <img src="photo1_1.jpg" alt="Photo 1">
-                    <img src="photo1_2.jpg" alt="Photo 2">
-                    <!-- Add more photos as needed -->
-                </div>
+        <h2>Travel Photo Albums</h2>
+        <div class="image-container">
+            <img src="TRAVELLING PHOTOS/IMG_20240505_181206.jpg" alt="HOME IMAGE 1">
+            <div class="author-info">
+                <p><strong>Welcome to My Travel Adventures</strong></p>
+                <p>Welcome to My Travel Adventures, a place where wanderlust meets discovery, and every journey is a story waiting to be told. Embark on an exhilarating exploration of the world through the lens of my experiences, passions, and adventures.</p>
+                <p><strong>About Me</strong></p>
+                <p>I'm Priyanshu Sharma, a 21-year-old explorer fueled by a deep love for travel, culture, and adventure. With a camera in hand and an open heart, I traverse the globe, capturing moments that resonate with the soul and memories that last a lifetime.</p>
+                <p><strong>Get Inspired</strong></p>
+                <p>Whether you're a seasoned traveler seeking your next adventure or an armchair explorer dreaming of distant lands, My Travel Adventures is your gateway to inspiration. Discover hidden gems, uncover travel tips, and ignite your wanderlust as we embark on this journey together.</p>
+                <p><strong>Start Exploring</strong></p>
+                <p>Ready to embark on an adventure? Start exploring now and let the magic of travel ignite your soul. From breathtaking landscapes to captivating cultural experiences, the world is yours to discover, and My Travel Adventures is your guide to unlocking its wonders.</p>
             </div>
-            <div class="folder" style="background-image: url('photo2.jpg');">
-                <div class="photos">
-                    <img src="photo2_1.jpg" alt="Photo 1">
-                    <img src="photo2_2.jpg" alt="Photo 2">
-                    <!-- Add more photos as needed -->
-                </div>
-            </div>
-            <!-- Add more folders with photos as needed -->
         </div>
     </section>
     <footer>
         <p>&copy; 2024 My Travel Adventures. All Rights Reserved.</p>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
