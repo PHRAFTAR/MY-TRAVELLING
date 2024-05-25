@@ -3,12 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destination 2 - My Travel Adventures</title>
+    <title>Humayun's Tomb - My Travel Adventures</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('photo2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .photo {
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        /* Custom styles for each photo */
+        #photo1 {
+            max-width: 500px;
+            height: 500px;
+            left: 0%;
+            right: 300px;
+        }
+
+        #photo2 {
+            max-width: 60%;
+            height: 300px;
+        }
+
+        #photo3 {
+            max-width: 40%;
+            height: 500px;
+        }
+
+        #photo4 {
+            max-width: 50%;
+            height: 400px;
+        }
+
+        #photo5 {
+            max-width: 60%;
+            height: 300px;
+        }
+
+        #photo6 {
+            max-width: 40%;
+            height: 500px;
+        }
+
+        #photo7 {
+            max-width: 50%;
+            height: 400px;
+        }
+
+        #photo8 {
+            max-width: 60%;
+            height: 300px;
+        }
+
+        #photo9 {
+            max-width: 40%;
+            height: 500px;
+        }
+
+        #photo10 {
+            max-width: 50%;
+            height: 400px;
+        }
+
+        #photo11 {
+            max-width: 60%;
+            height: 300px;
+        }
+
+        #photo12 {
+            max-width: 40%;
+            height: 500px;
+        }
+
+        #photo13 {
+            max-width: 50%;
+            height: 400px;
+        }
+
+        #photo14 {
+            max-width: 60%;
+            height: 300px;
+        }
+
+        #photo15 {
+            max-width: 40%;
+            height: 500px;
+        }
+
+        #photo16 {
+            max-width: 50%;
+            height: 400px;
+        }
+
+        #photo17 {
+            max-width: 60%;
+            height: 300px;
+        }
+
+        #photo18 {
+            max-width: 40%;
+            height: 500px;
+        }
+
+        #photo19 {
+            max-width: 50%;
+            height: 400px;
+        }
+
+        #photo20 {
+            max-width: 60%;
+            height: 300px;
+        }
+
+        #photo21 {
+            max-width: 40%;
+            height: 500px;
+        }
+
+        /* Styles for modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 90%;
+            max-width: 700px;
+        }
+
+        .modal-content img {
+            width: 100%;
+            height: auto;
+        }
+
+        .close {
+            color: #fff;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 36px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #humayun-tomb p {
+            text-align: justify;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Destination 2</h1>
+        <h1>Humayun's Tomb</h1>
     </header>
     <nav>
         <a href="index.html">Home</a>
@@ -17,15 +188,117 @@
         <a href="videos.html">Videos</a>
         <a href="contact.html">Contact</a>
     </nav>
-    <section id="destination2">
-        <h2>Destination 2 - My Travel Adventures</h2>
-        <p>Description of Destination 2 goes here...</p>
-        <img src="destination2_photo1.jpg" alt="Destination 2 Photo 1">
-        <img src="destination2_photo2.jpg" alt="Destination 2 Photo 2">
-        <!-- Add more photos and content as needed -->
+    <section id="humayun-tomb">
+        <h2>Humayun's Tomb - My Travel Adventures</h2>
+        <p>Humayun's Tomb, a UNESCO World Heritage Site, stands as a magnificent testament to Mughal architecture in New Delhi, India. Built in the mid-16th century, it was the first garden-tomb on the Indian subcontinent. Join us as we explore the stunning architecture, lush gardens, and historical significance of this iconic monument.</p>
+        <div>
+            <img id="photo1" class="photo" src="HUMAYUTOMB/HUMAYUN 14.jpg" alt="Humayun's Tomb Photo 1" onclick="openModal('HUMAYUTOMB/HUMAYUN 14.jpg')">
+            <p><strong>Architectural Splendor:</strong> The tomb's design, characterized by its Persian-inspired double dome and intricate stone lattice work, is a masterpiece of Mughal architecture. This image captures the grandeur of the structure against a clear blue sky.</p>
+        </div>
+        <div>
+            <img id="photo2" class="photo" src="HUMAYUTOMB/HUMAYUN 1.jpg" alt="Humayun's Tomb Photo 2" onclick="openModal('TRAVELLING PHOTOS/humayun_tomb_2.jpg')">
+            <p><strong>Serene Gardens:</strong> The Charbagh garden layout, with its symmetrical pathways and water channels, creates a serene and tranquil atmosphere. This photo showcases the lush greenery and serene beauty of the tomb's surroundings.</p>
+        </div>
+        <div>
+            <img id="photo3" class="photo" src="HUMAYUTOMB/HUMAYUN 11.jpg" alt="Humayun's Tomb Photo 3" onclick="openModal('TRAVELLING PHOTOS/humayun_tomb_3.jpg')">
+            <p><strong>Historical Significance:</strong> Humayun's Tomb holds great historical significance as it served as a model for later Mughal architecture, including the Taj Mahal. This image highlights the tomb's historical and cultural importance.</p>
+        </div>
+        <div>
+            <img id="photo4" class="photo" src="HUMAYUTOMB/HUMAYUN 13.jpg" alt="Humayun's Tomb Photo 4" onclick="openModal('TRAVELLING PHOTOS/humayun_tomb_4.jpg')">
+            <p>This historical gem is more than just bricks and mortar. It represents the fusion of art, faith, and human endeavor. Its restoration would not only preserve our heritage but also connect us to our roots. As we explore its nooks and crannies, we become time travelers, bridging the gap between past and present.</p>
+        </div>
+        <div>
+            <img id="photo5" class="photo" src="TRAVELLING PHOTOS/humayun_tomb_5.jpg" alt="Humayun's Tomb Photo 5" onclick="openModal('TRAVELLING PHOTOS/humayun_tomb_5.jpg')">
+            <p>Description for Humayun's Tomb Photo 5.</p>
+        </div>
+        <div>
+            <img id="photo6" class="photo" src="TRAVELLING PHOTOS/humayun_tomb_6.jpg" alt="Humayun's Tomb Photo 6" onclick="openModal('TRAVELLING PHOTOS/humayun_tomb_6.jpg')">
+            <p>Description for Humayun's Tomb Photo 6.</p>
+        </div>
+        <div>
+            <img id="photo7" class="photo" src="TRAVELLING PHOTOS/humayun_tomb_7.jpg" alt="Humayun's Tomb Photo 7" onclick="openModal('TRAVELLING PHOTOS/humayun_tomb_7.jpg')">
+            <p>Description for Humayun's Tomb Photo 7.</p>
+        </div>
+        <div>
+            <img id="photo8" class="photo" src="TRAVELLING PHOTOS/humayun_tomb_8.jpg" alt="Humayun's Tomb Photo 8" onclick="openModal('TRAVELLING PHOTOS/humayun_tomb_8.jpg')">
+            <p>Description for Humayun's Tomb Photo 8.</p>
+        </div>
+        <div>
+            <img id="photo9" class="photo" src="TRAVELLING PHOTOS/humayun_tomb_9.jpg" alt="Humayun's Tomb Photo 9" onclick="openModal('TRAVELLING PHOTOS/humayun_tomb_9.jpg')">
+            <p>Description for Humayun's Tomb Photo 9.</p>
+        </div>
+        <div>
+            <img id="photo10" class="photo" src="TRAVELLING PHOTOS/humayun_tomb_10.jpg" alt="Humayun's Tomb Photo 10" onclick="openModal('TRAVELLING PHOTOS/humayun_tomb_10.jpg')">
+            <p>Description for Humayun's Tomb Photo 10.</p>
+        </div>
+        <div>
+            <img id="photo11" class="photo" src="TRAVELLING PHOTOS/humayun_tomb_11.jpg" alt="Humayun's Tomb Photo 11" onclick="openModal('TRAVELLING PHOTOS/humayun_tomb_11.jpg')">
+            <p>Description for Humayun's Tomb Photo 11.</p>
+        </div>
+        <div>
+            <img id="photo12" class="photo" src="TRAVELLING PHOTOS/humayun_tomb_12.jpg" alt="Humayun's Tomb Photo 12" onclick="openModal('TRAVELLING PHOTOS/humayun_tomb_12.jpg')">
+            <p>Description for Humayun's Tomb Photo 12.</p>
+        </div>
+        <div>
+            <img id="photo13" class="photo" src="TRAVELLING PHOTOS/humayun_tomb_13.jpg" alt="Humayun's Tomb Photo 13" onclick="openModal('TRAVELLING PHOTOS/humayun_tomb_13.jpg')">
+            <p>Description for Humayun's Tomb Photo 13.</p>
+        </div>
+        <div>
+            <img id="photo14" class="photo" src="TRAVELLING PHOTOS/humayun_tomb_14.jpg" alt="Humayun's Tomb Photo 14" onclick="openModal('TRAVELLING PHOTOS/humayun_tomb_14.jpg')">
+            <p>Description for Humayun's Tomb Photo 14.</p>
+        </div>
+        <div>
+            <img id="photo15" class="photo" src="TRAVELLING PHOTOS/humayun_tomb_15.jpg" alt="Humayun's Tomb Photo 15" onclick="openModal('TRAVELLING PHOTOS/humayun_tomb_15.jpg')">
+            <p>Description for Humayun's Tomb Photo 15.</p>
+        </div>
+        <div>
+            <img id="photo16" class="photo" src="TRAVELLING PHOTOS/humayun_tomb_16.jpg" alt="Humayun's Tomb Photo 16" onclick="openModal('TRAVELLING PHOTOS/humayun_tomb_16.jpg')">
+            <p>Description for Humayun's Tomb Photo 16.</p>
+        </div>
+        <div>
+            <img id="photo17" class="photo" src="TRAVELLING PHOTOS/humayun_tomb_17.jpg" alt="Humayun's Tomb Photo 17" onclick="openModal('TRAVELLING PHOTOS/humayun_tomb_17.jpg')">
+            <p>Description for Humayun's Tomb Photo 17.</p>
+        </div>
+        <div>
+            <img id="photo18" class="photo" src="TRAVELLING PHOTOS/humayun_tomb_18.jpg" alt="Humayun's Tomb Photo 18" onclick="openModal('TRAVELLING PHOTOS/humayun_tomb_18.jpg')">
+            <p>Description for Humayun's Tomb Photo 18.</p>
+        </div>
+        <div>
+            <img id="photo19" class="photo" src="TRAVELLING PHOTOS/humayun_tomb_19.jpg" alt="Humayun's Tomb Photo 19" onclick="openModal('TRAVELLING PHOTOS/humayun_tomb_19.jpg')">
+            <p>Description for Humayun's Tomb Photo 19.</p>
+        </div>
+        <div>
+            <img id="photo20" class="photo" src="TRAVELLING PHOTOS/humayun_tomb_20.jpg" alt="Humayun's Tomb Photo 20" onclick="openModal('TRAVELLING PHOTOS/humayun_tomb_20.jpg')">
+            <p>Description for Humayun's Tomb Photo 20.</p>
+        </div>
+        <div>
+            <img id="photo21" class="photo" src="TRAVELLING PHOTOS/humayun_tomb_21.jpg" alt="Humayun's Tomb Photo 21" onclick="openModal('TRAVELLING PHOTOS/humayun_tomb_21.jpg')">
+            <p>Description for Humayun's Tomb Photo 21.</p>
+        </div>
     </section>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
     <footer>
+        <script src="./script.js"></script>
         <p>&copy; 2024 My Travel Adventures. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        function openModal(imgSrc) {
+            var modal = document.getElementById('myModal');
+            var modalImg = document.getElementById("img01");
+            modal.style.display = "block";
+            modalImg.src = imgSrc;
+        }
+
+        function closeModal() {
+            var modal = document.getElementById('myModal');
+            modal.style.display = "none";
+        }
+    </script>
 </body>
 </html>
